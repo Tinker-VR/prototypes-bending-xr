@@ -1,0 +1,16 @@
+Library: E:\dev\prototypes\dance-vr\Dance VR\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
+--platform=Android
+--backend=burst-llvm-14
+--target=ARMV8A_AARCH64
+--global-safety-checks-setting=Off
+--meta-data-generation=False
+--dump=Function
+--float-precision=Standard
+--generate-link-xml=Temp\burst.link.xml
+--temp-folder=E:\dev\prototypes\dance-vr\Dance VR\Temp\Burst
+--key-folder=E:/Program Files/Unity/2022.3.2f1/Editor/Data/PlaybackEngines/AndroidPlayer
+--decode-folder=E:\dev\prototypes\dance-vr\Dance VR\Library\Burst
+--output=E:\dev\prototypes\dance-vr\Dance VR\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
+--pdb-search-paths=Temp/ManagedSymbols/
+
+
