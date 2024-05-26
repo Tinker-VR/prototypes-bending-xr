@@ -15,11 +15,19 @@ public class HandGestureManager : MonoBehaviour
     private Vector3 lastHandPosition;
     private float lastPinchTime;
 
+    private bool _isCloseFist;
+
     private const float upwardGestureSpeed = 0.5f; // Speed threshold for quick upward motion
 
 
     void Start()
     {
+    }
+
+    public void CloseFistValidation(bool _toggle)
+    { 
+        _isCloseFist = !_isCloseFist;
+        Debug.Log($"Is Fist {_toggle}");
     }
 
     void Update()
@@ -31,7 +39,7 @@ public class HandGestureManager : MonoBehaviour
     private void HandlePinchGesture()
     {
         bool isPinching = ovrHand.GetFingerIsPinching(OVRHand.HandFinger.Index);
-        if (isPinching)
+        if (_isCloseFist)
         {
             if (!palmPointer.IsTargetLocked)
             {
